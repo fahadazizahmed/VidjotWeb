@@ -66,7 +66,7 @@ next();
 
 
 })*/
-app.get('/index', function(req,res){
+app.get('/', function(req,res){
   //  console.log(req.name);
   res.render('index',{title:'index'})
 })
