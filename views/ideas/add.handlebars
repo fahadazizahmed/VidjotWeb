@@ -1,0 +1,24 @@
+
+{{#each errors}}
+<div class="alert alert-danger">{{text}}</div>
+{{else}}
+{{/each}}
+{{#if Suc }}
+    <div class="alert alert-success">{{Suc}}</div>
+  {{/if}}
+
+<div class="card card-body">
+  <h2>Add Video Idea</h2>
+  <form action="/ideas" method="post">
+    <div class="form-group">
+      <label for="email">Title:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter title" name="title" value={{title}}>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Description:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter description" name="Details" value={{description}}>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Video</button>
+  </form>
+</div>

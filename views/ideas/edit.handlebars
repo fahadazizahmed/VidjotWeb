@@ -1,0 +1,19 @@
+<div class="card card-body">
+
+  <h2>Edit Video Idea</h2>
+  <form action="/ideas/{{ideas.id}}?_method=PUT" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+      <label for="email">Title</label>
+      <input type="text" class="form-control"  name="title" value="{{ideas.title}}">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Description:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter description" name="Details" value="{{ideas.Details}}">
+    </div>
+
+<button type="submit" class="btn btn-primary">Update Video</button>
+  </form>
+
+
+</div>
